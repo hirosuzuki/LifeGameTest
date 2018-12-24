@@ -96,9 +96,9 @@
         for (var y = 0; y < BOARD_H; y++) {
             for (var x = 0; x < BOARD_W; x++) {
                 if (cells[y + 1][x + 1]) {
-                    context.fillStyle = "rgb(100, 255, 100)"
+                    context.fillStyle = "rgba(63, 127, 63, 0.75)"
                 } else {
-                    context.fillStyle = "rgb(0, 0, 0)"
+                    context.fillStyle = "rgba(0, 0, 0, 0.75)"
                 }
                 context.fillRect(x * CELL_W + 1, y * CELL_H + 1, CELL_W - 1, CELL_H - 1)
             }
